@@ -922,8 +922,8 @@ export default function DashboardPage() {
                   key={tab.name}
                   onClick={() => setActiveTab(tab.name)}
                   className={`w-full py-3 px-4 rounded-xl flex items-center gap-3.5 text-[14px] font-semibold transition-all duration-150 cursor-pointer border-none outline-none ${isActive
-                      ? "bg-blue-600 text-white shadow-md shadow-blue-500/20"
-                      : "text-slate-500 hover:bg-slate-50 hover:text-slate-800"
+                    ? "bg-blue-600 text-white shadow-md shadow-blue-500/20"
+                    : "text-slate-500 hover:bg-slate-50 hover:text-slate-800"
                     }`}
                 >
                   <svg className={`w-5 h-5 shrink-0 ${isActive ? "text-white" : "text-slate-400"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -966,7 +966,7 @@ export default function DashboardPage() {
         <header className="bg-white border-b border-slate-200/80 py-4 px-6 md:px-8 flex items-center justify-between sticky top-0 z-30">
           <div>
             <h2 className="text-base font-bold text-slate-800 tracking-tight">
-              SMK Negeri 2 Malang
+              SMK Negeri 2 Malang || Raditya
             </h2>
           </div>
 
@@ -1043,8 +1043,8 @@ export default function DashboardPage() {
                         key={item.type}
                         onClick={() => setChartType(item.type as any)}
                         className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all duration-150 cursor-pointer border-none outline-none ${chartType === item.type
-                            ? "bg-white text-blue-600 shadow-sm"
-                            : "text-slate-500 hover:text-slate-700"
+                          ? "bg-white text-blue-600 shadow-sm"
+                          : "text-slate-500 hover:text-slate-700"
                           }`}
                       >
                         {item.label}
@@ -1084,9 +1084,9 @@ export default function DashboardPage() {
                           <div
                             style={{ height: `${Math.max(barHeightPercent, 4)}%` }}
                             className={`w-full rounded-t-lg shadow-md group-hover:from-rose-500 group-hover:to-orange-500 group-hover:shadow-rose-100 transition-all duration-300 relative cursor-pointer flex items-end justify-center overflow-hidden bg-gradient-to-t ${chartType === "tingkat" && stat.label === "Ringan" ? "from-emerald-500 to-teal-400" :
-                                chartType === "tingkat" && stat.label === "Sedang" ? "from-amber-500 to-orange-400" :
-                                  chartType === "tingkat" && stat.label === "Berat" ? "from-rose-600 to-red-500" :
-                                    "from-blue-600 to-indigo-500"
+                              chartType === "tingkat" && stat.label === "Sedang" ? "from-amber-500 to-orange-400" :
+                                chartType === "tingkat" && stat.label === "Berat" ? "from-rose-600 to-red-500" :
+                                  "from-blue-600 to-indigo-500"
                               }`}
                           >
                             {/* Inner Accent Line */}
@@ -1170,7 +1170,7 @@ export default function DashboardPage() {
                           </div>
                           <div className="text-right">
                             <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full inline-block ${viol.level === "Ringan" ? "bg-emerald-50 text-emerald-600" :
-                                viol.level === "Sedang" ? "bg-amber-50 text-amber-600" : "bg-rose-50 text-rose-600"
+                              viol.level === "Sedang" ? "bg-amber-50 text-amber-600" : "bg-rose-50 text-rose-600"
                               }`}>
                               {viol.level}
                             </span>
@@ -1464,8 +1464,8 @@ export default function DashboardPage() {
                         key={lvl}
                         onClick={() => setPelanggaranFilterLevel(lvl)}
                         className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all duration-150 cursor-pointer border-none outline-none ${pelanggaranFilterLevel === lvl
-                            ? "bg-white text-blue-600 shadow-sm"
-                            : "text-slate-500 hover:text-slate-700"
+                          ? "bg-white text-blue-600 shadow-sm"
+                          : "text-slate-500 hover:text-slate-700"
                           }`}
                       >
                         {lvl}
@@ -1521,7 +1521,7 @@ export default function DashboardPage() {
                           <td className="py-3.5 px-6 text-slate-600">{v.type}</td>
                           <td className="py-3.5 px-6">
                             <span className={`px-2.5 py-1 text-[11px] font-bold rounded-lg inline-block ${v.level === "Ringan" ? "bg-emerald-50 text-emerald-600" :
-                                v.level === "Sedang" ? "bg-amber-50 text-amber-600" : "bg-rose-50 text-rose-600"
+                              v.level === "Sedang" ? "bg-amber-50 text-amber-600" : "bg-rose-50 text-rose-600"
                               }`}>
                               {v.level}
                             </span>
@@ -1909,7 +1909,7 @@ export default function DashboardPage() {
               {/* Tindakan Section */}
               <div className="border-t border-slate-100 pt-4 flex flex-col gap-3">
                 <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Tindakan / Tindak Lanjut</h4>
-                
+
                 <div className="flex flex-col gap-1.5">
                   <label className="text-xs font-bold text-slate-600">Tanggal Tindak Lanjut</label>
                   <input
@@ -1935,7 +1935,7 @@ export default function DashboardPage() {
               {/* Foto Bukti Section */}
               <div className="border-t border-slate-100 pt-4 flex flex-col gap-3">
                 <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Foto Bukti</h4>
-                
+
                 <div className="flex flex-col gap-1.5">
                   <label className="text-xs font-bold text-slate-600">Foto Bukti (Upload file atau tempel URL link gambar)</label>
                   <input
